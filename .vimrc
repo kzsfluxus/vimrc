@@ -62,7 +62,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'jparise/vim-graphql'
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
+" Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 Plug 'mattn/emmet-vim'
 " Plug 'rust-lang/rust.vim'
 Plug 'vim-perl/vim-perl'
