@@ -69,3 +69,9 @@ colorscheme iceberg
 
 A konfiguráció bármikor testreszabható a `.vimrc` fájl szerkesztésével. Ha kérdésed van, nyugodtan nyiss egy issue-t a GitHub-on!
 
+## Képernyőképek
+
+[vim NERDTree](./images/vim01.png)
+
+[vim DB_UI](./images/vim02.png)
+
