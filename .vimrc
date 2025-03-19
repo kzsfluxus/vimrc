@@ -42,7 +42,7 @@ set undodir=~/.vim/undodir  " Undo fájlok helye
 """ Plugin menedzser
 call plug#begin('~/.vim/plugged')
 " Kiegészítő funkciók
-Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+" Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 Plug 'preservim/nerdtree'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'tpope/vim-commentary'
