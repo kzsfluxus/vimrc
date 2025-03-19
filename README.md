@@ -71,7 +71,7 @@ A konfiguráció bármikor testreszabható a `.vimrc` fájl szerkesztésével. H
 
 ## Képernyőképek
 
-[vim NERDTree](./images/vim01.png)
+![vim NERDTree](./images/vim01.png)
 
-[vim DB_UI](./images/vim02.png)
+![vim DB_UI](./images/vim02.png)
 
