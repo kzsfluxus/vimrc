@@ -37,9 +37,9 @@ A konfiguráció **vim-plug** segítségével kezeli a plugineket. A pluginek te
 
 Dadbod UI gyors adatbázis-kezeléshez:
 
-- **`<Space>db`** → DadBod UI megnyitása
-- **`<Space>df`** → Adatbázis fájlok keresése
-- **`<Space>dr`** → Adatbázis buffer átnevezése
+- **`\db`** → DadBod UI megnyitása
+- **`\df`** → Adatbázis fájlok keresése
+- **`\dr`** → Adatbázis buffer átnevezése
 
 ### 5. Fájlkezelés és navigáció
 

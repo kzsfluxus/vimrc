@@ -88,7 +88,7 @@ call plug#end()
 colorscheme iceberg
 
 """ Billentyűparancsok
-let mapleader = " "  " Space billentyű lesz a leader
+" let mapleader = " "  " Space billentyű lesz a leader
 
 """ Fájltípus specifikus beállítások
 filetype plugin indent on
