@@ -69,7 +69,7 @@ Plug 'vim-perl/vim-perl'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'leafOfTree/vim-vue-plugin'
 Plug 'plasticboy/vim-markdown'
-" Plug 'lervag/vimtex', { 'tag': 'v2.15' }
+Plug 'lervag/vimtex', { 'tag': 'v2.15' }
 
 " Vizuális kiegészítők
 Plug 'gko/vim-coloresque'
@@ -110,6 +110,17 @@ let g:db_ui_disable_mappings = 0
 nnoremap <silent> <leader>db :DBUIToggle<CR>
 nnoremap <silent> <leader>df :DBUIFindBuffer<CR>
 nnoremap <silent> <leader>dr :DBUIRenameBuffer<CR>
+
+""" VimTex beállítások
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+
+let g:vimtex_compiler_method = 'latexrun'
+let g:vimtex_quickfix_mode = 1
+let g:vimtex_view_automatic = 1
+
+let maplocalleader = ","
 
 """ Syntastic beállítások
 let g:syntastic_always_populate_loc_list = 1
