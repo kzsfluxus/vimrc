@@ -7,6 +7,8 @@ elif [[ "$(command -v dnf)" ]]; then
     sudo dnf install -y vim git curl
 elif [[ "$(command -v pacman)" ]]; then
     sudo pacman -Sy --needed vim git curl
+elif [[ "$(command -v zypper)" ]]; then
+    sudo zypper refresh && sudo zypper install -y vim git curl
 else
     echo "Nem támogatott csomagkezelő!"
     exit 1
