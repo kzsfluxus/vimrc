@@ -21,7 +21,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # Színséma másolása
 mkdir -p ~/.vim/colors
-cp .vim/colors/iceberg.vim ~/.vim/colors/
+cp .vim/colors/* ~/.vim/colors/
 
 # .vimrc beállítása
 cp .vimrc ~/.vimrc
