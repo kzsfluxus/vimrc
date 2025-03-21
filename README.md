@@ -67,7 +67,13 @@ colorscheme iceberg
 
 ## További információk
 
-A konfiguráció bármikor testreszabható a `.vimrc` fájl szerkesztésével. Ha kérdésed van, nyugodtan nyiss egy issue-t a GitHub-on!
+A konfiguráció bármikor testreszabható a `.vimrc` fájl szerkesztésével. 
+Az alábbi bővítményekhez szükséges csomagok:
+
+* **vimtex**: zathura, latexmk, texlive
+* **phpactor**: PHP 8.1, php-mbstring, composer
+* **rust**: rustc, cargo
+* **codeium**: regisztráció a https://www.codeium.ai oldalon
 
 ## Képernyőképek
 

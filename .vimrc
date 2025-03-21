@@ -69,7 +69,7 @@ Plug 'vim-perl/vim-perl'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'leafOfTree/vim-vue-plugin'
 Plug 'plasticboy/vim-markdown'
-Plug 'lervag/vimtex', { 'tag': 'v2.15' }
+" Plug 'lervag/vimtex', { 'tag': 'v2.15' }
 
 " Vizuális kiegészítők
 Plug 'gko/vim-coloresque'
