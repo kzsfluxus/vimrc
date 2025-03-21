@@ -73,7 +73,7 @@ Az alábbi bővítményekhez szükséges csomagok:
 * **vimtex**: zathura, latexmk, texlive
 * **phpactor**: PHP 8.1, php-mbstring, composer
 * **rust**: rustc, cargo
-* **codeium**: regisztráció a https://www.codeium.ai oldalon
+* **codeium**: regisztráció a https://codeium.com oldalon
 
 ## Képernyőképek
 
