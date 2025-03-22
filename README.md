@@ -72,7 +72,8 @@ Az alábbi bővítményekhez szükséges csomagok:
 
 * **vimtex**: zathura, latexmk, texlive
 * **phpactor**: PHP 8.1, php-mbstring, composer
-* **rust**: rustc, cargo
+* **rust**: rustc, cargo, rustfmt
+* **fzf**: fzf, ripgrep, silversearcher-ag, perl, universal-ctags
 * **codeium**: regisztráció a https://codeium.com oldalon
 
 ## Képernyőképek
