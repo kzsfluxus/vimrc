@@ -47,6 +47,7 @@ Plug 'preservim/nerdtree'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'tpope/vim-commentary'
 Plug 'vim-syntastic/syntastic'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
