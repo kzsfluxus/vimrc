@@ -82,3 +82,4 @@ Az alábbi bővítményekhez szükséges csomagok:
 
 ![vim DB_UI](./images/vim02.png)
 
+![vim GVim](./images/vim03.png)
