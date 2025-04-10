@@ -23,7 +23,7 @@ set scrolloff=8
 set hidden
 set mouse=a
 set clipboard=unnamedplus
-set lazyredraw
+" set lazyredraw
 set updatetime=300
 
 """ Keresési beállítások
