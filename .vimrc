@@ -43,7 +43,7 @@ set undodir=~/.vim/undodir  " Undo fájlok helye
 call plug#begin('~/.vim/plugged')
 
 " Általános kiegészítő funkciók (mindig betöltve)
-Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+" Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 Plug 'preservim/nerdtree'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'tpope/vim-commentary'
@@ -64,14 +64,14 @@ Plug 'pangloss/vim-javascript', {'for': ['javascript', 'js']}
 Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'ts']}
 Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascriptreact', 'jsx']}
 Plug 'jparise/vim-graphql', {'for': 'graphql'}
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
+" Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 Plug 'mattn/emmet-vim', {'for': ['html', 'xhtml', 'css', 'xml', 'xsl', 'jsx', 'vue']}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
 Plug 'vim-perl/vim-perl', {'for': 'perl'}
 Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}
 Plug 'leafOfTree/vim-vue-plugin', {'for': 'vue'}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
-Plug 'lervag/vimtex', {'for': 'tex', 'tag': 'v2.15'}
+" Plug 'lervag/vimtex', {'for': 'tex', 'tag': 'v2.15'}
 
 " Vizuális kiegészítők (kondicionális)
 Plug 'gko/vim-coloresque', {'for': ['css', 'scss', 'sass', 'html', 'vue']}
