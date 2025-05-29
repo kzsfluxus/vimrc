@@ -64,7 +64,7 @@ vim +PlugInstall +qall
 
 ```
 .
-├── setup.sh                    # Automatikus telepítő script
+├── $HOME                       # felhasználó home könyvtára
 ├── .vimrc                      # Vim konfigurációs fájl
 ├── .vim/
 │   └── colors/                 # Egyedi színsémák
