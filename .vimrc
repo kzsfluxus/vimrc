@@ -41,8 +41,9 @@ set undodir=~/.vim/undodir  " Undo fájlok helye
 
 """ Plugin menedzser
 call plug#begin('~/.vim/plugged')
-" Kiegészítő funkciók
-" Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+
+" Általános kiegészítő funkciók (mindig betöltve)
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 Plug 'preservim/nerdtree'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'tpope/vim-commentary'
@@ -55,34 +56,34 @@ Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular'
 
-" Szintaxis és nyelvi támogatás
+" Szintaxis és nyelvi támogatás (kondicionális betöltés)
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
-Plug 'othree/html5.vim'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'jparise/vim-graphql'
-" Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
-Plug 'mattn/emmet-vim'
-" Plug 'rust-lang/rust.vim'
-Plug 'vim-perl/vim-perl'
-Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'leafOfTree/vim-vue-plugin'
-Plug 'plasticboy/vim-markdown'
-" Plug 'lervag/vimtex', { 'tag': 'v2.15' }
+Plug 'othree/html5.vim', {'for': ['html', 'xhtml']}
+Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss', 'sass']}
+Plug 'pangloss/vim-javascript', {'for': ['javascript', 'js']}
+Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'ts']}
+Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascriptreact', 'jsx']}
+Plug 'jparise/vim-graphql', {'for': 'graphql'}
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
+Plug 'mattn/emmet-vim', {'for': ['html', 'xhtml', 'css', 'xml', 'xsl', 'jsx', 'vue']}
+Plug 'rust-lang/rust.vim', {'for': 'rust'}
+Plug 'vim-perl/vim-perl', {'for': 'perl'}
+Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}
+Plug 'leafOfTree/vim-vue-plugin', {'for': 'vue'}
+Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+Plug 'lervag/vimtex', {'for': 'tex', 'tag': 'v2.15'}
 
-" Vizuális kiegészítők
-Plug 'gko/vim-coloresque'
-Plug 'shmargum/vim-sass-colors'
+" Vizuális kiegészítők (kondicionális)
+Plug 'gko/vim-coloresque', {'for': ['css', 'scss', 'sass', 'html', 'vue']}
+Plug 'shmargum/vim-sass-colors', {'for': ['scss', 'sass']}
 
-" Adatbázis kezelés
-Plug 'tpope/vim-dadbod'
-Plug 'kristijanhusak/vim-dadbod-ui'
-Plug 'kristijanhusak/vim-dadbod-completion'
+" Adatbázis kezelés (kondicionális)
+Plug 'tpope/vim-dadbod', {'on': ['DB', 'DBUI']}
+Plug 'kristijanhusak/vim-dadbod-ui', {'on': ['DBUI', 'DBUIToggle', 'DBUIAddConnection']}
+Plug 'kristijanhusak/vim-dadbod-completion', {'for': 'sql'}
 
-" Fájl specifikus
-Plug 'chrisbra/csv.vim'
+" Fájl specifikus (kondicionális)
+Plug 'chrisbra/csv.vim', {'for': 'csv'}
 call plug#end()
 
 """ Színséma
