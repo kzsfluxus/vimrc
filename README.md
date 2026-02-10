@@ -130,6 +130,7 @@ vim +PlugInstall +qall
 - **Rust** - Rust language support
 - **Perl** - Perl syntax
 - **Python** - PEP8 indentation
+- **Vala** - Vala syntax
 - **Vue.js** - Vue component syntax
 - **Markdown** - Enhanced markdown
 - **LaTeX** - VimTeX support
