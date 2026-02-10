@@ -72,6 +72,7 @@ Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}
 Plug 'leafOfTree/vim-vue-plugin', {'for': 'vue'}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 " Plug 'lervag/vimtex', {'for': 'tex', 'tag': 'v2.15'}
+Plug 'vala-lang/vala.vim', {'for': 'vala'}
 
 " Vizuális kiegészítők (kondicionális)
 Plug 'gko/vim-coloresque', {'for': ['css', 'scss', 'sass', 'html', 'vue']}
@@ -119,6 +120,12 @@ let g:vimtex_compiler_method = 'latexrun'
 let g:vimtex_quickfix_mode = 1
 let g:vimtex_view_automatic = 1
 let maplocalleader = ","
+
+""" Vala beállítások
+if has("autocmd")
+	autocmd FileType vala ValaCodingStyle
+	autocmd FileType vala noremap <F8> :CCode<CR>
+end
 
 """ Syntastic beállítások
 let g:syntastic_always_populate_loc_list = 1
