@@ -134,6 +134,7 @@ vim +PlugInstall +qall
 - **Vue.js** - Vue component syntax
 - **Markdown** - Enhanced markdown
 - **LaTeX** - VimTeX support
+- **Zig** - Zig syntax
 
 ### Vizuális kiegészítők
 - **Coloresque** - Színkódok megjelenítése

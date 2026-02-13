@@ -72,7 +72,8 @@ Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}
 Plug 'leafOfTree/vim-vue-plugin', {'for': 'vue'}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 " Plug 'lervag/vimtex', {'for': 'tex', 'tag': 'v2.15'}
-Plug 'vala-lang/vala.vim', {'for': 'vala'}
+" Plug 'vala-lang/vala.vim', {'for': 'vala'}
+" Plug 'ziglang/zig.vim', {'for': 'zig'}
 
 " Vizuális kiegészítők (kondicionális)
 Plug 'gko/vim-coloresque', {'for': ['css', 'scss', 'sass', 'html', 'vue']}
