@@ -11,6 +11,7 @@ A konfiguráció automatikus telepítéséhez futtasd a következő parancsot:
 ```
 
 A script automatikusan:
+
 - Telepíti az alap csomagokat (vim, git, curl) a rendszer csomagkezelőjével
 - Letölti és telepíti a vim-plug plugin managert
 - Létrehozza a szükséges könyvtárakat (`~/.vim/autoload`, `~/.vim/plugged`, `~/.vim/undodir`, `~/.config/db_ui`)
@@ -20,6 +21,7 @@ A script automatikusan:
 - Telepíti az összes Vim plugint
 
 ### Támogatott rendszerek
+
 - **Ubuntu/Debian** - apt csomagkezelő
 - **Fedora/RHEL** - dnf csomagkezelő  
 - **Arch Linux** - pacman csomagkezelő
@@ -30,17 +32,21 @@ A script automatikusan:
 Ha a setup.sh nem működik, akkor manuálisan:
 
 1. Telepítsd az alap csomagokat:
-```bash
-# Ubuntu/Debian
-sudo apt install vim git curl
+   
+   ```bash
+   # Ubuntu/Debian
+   sudo apt install vim git curl
+   ```
 
 # Fedora
+
 sudo dnf install vim git curl
 
 # Arch Linux
-sudo pacman -S vim git curl
-```
 
+sudo pacman -S vim git curl
+
+```
 2. Másold a konfigurációs fájlokat:
 ```bash
 cp .vimrc ~/.vimrc
@@ -50,15 +56,17 @@ cp .config/db_ui/connections.json ~/.config/db_ui/
 ```
 
 3. Telepítsd a vim-plug managert:
-```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+   
+   ```bash
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+   ```
 
 4. Telepítsd a plugineket:
-```vim
-vim +PlugInstall +qall
-```
+   
+   ```vim
+   vim +PlugInstall +qall
+   ```
 
 ## Projekt struktúra
 
@@ -74,6 +82,7 @@ vim +PlugInstall +qall
 ```
 
 ### Alap beállítások
+
 - UTF-8 kódolás
 - Vi kompatibilitás kikapcsolása
 - Gyorsabb terminál renderelés
@@ -82,8 +91,10 @@ vim +PlugInstall +qall
 - Szintaxis kiemelés
 - Egér támogatás
 - Rendszer vágólap integrációja
+- OSCYank
 
 ### Szerkesztési beállítások
+
 - Automatikus behúzás
 - 4 szóköz tab méret
 - 8 sor görgetési margó
@@ -91,12 +102,14 @@ vim +PlugInstall +qall
 - Rejtett bufferek támogatása
 
 ### Keresési beállítások
+
 - Kis- és nagybetű intelligens keresés
 - Keresési találatok kiemelése
 - Fokozatos keresés
 - Wildmenu engedélyezése
 
 ### Fájlkezelés
+
 - Nincs backup fájl (.bak)
 - Nincs swap fájl (.swp)
 - Perzisztens undo történet
@@ -105,6 +118,7 @@ vim +PlugInstall +qall
 ## Telepített pluginek
 
 ### Kiegészítő funkciók
+
 - **Codeium** - AI kódkiegészítés
 - **NERDTree** - Fájlkezelő fa
 - **NERDTree Buffer Ops** - Buffer műveletek
@@ -116,8 +130,10 @@ vim +PlugInstall +qall
 - **Fugitive** - Git integráció
 - **Auto-pairs** - Automatikus zárójel párosítás
 - **Tabular** - Szöveg igazítás
+- **OSCYank** - Remote szerverről helyi vágólapra (\y)
 
 ### Nyelvi támogatás
+
 - **C/C++** - Enhanced C/C++ syntax
 - **HTML5** - Modern HTML syntax
 - **CSS3** - CSS3 syntax support
@@ -137,6 +153,7 @@ vim +PlugInstall +qall
 - **Zig** - Zig syntax
 
 ### Vizuális kiegészítők
+
 - **Coloresque** - Színkódok megjelenítése
 - **Sass Colors** - Sass színek
 
@@ -152,36 +169,43 @@ A konfiguráció tartalmaz előre beállított adatbázis kapcsolatokat a `~/.co
 - Automatikus tábla segédek
 
 ### Speciális fájlformátumok
+
 - **CSV.vim** - CSV fájlok kezelése
 
 ## Billentyűparancsok
 
 ### NERDTree
+
 - `F2` - NERDTree toggle
 
 ### Adatbázis kezelés (DadBod)
+
 - `<leader>db` - DadBod UI toggle
 - `<leader>df` - DadBod fájl keresés
 - `<leader>dr` - DadBod buffer átnevezés
 
 ### Kommentelés
+
 - `gcc` - Sor kommentelése/kikommentelése
 - `gc` - Kijelölt terület kommentelése
 
 ## Speciális beállítások
 
 ### VimTeX
+
 - PDF viewer: Zathura
 - Compiler: latexrun
 - Local leader: `,` (vessző)
 - Automatikus PDF megjelenítés
 
 ### Syntastic
+
 - Automatikus szintaxis ellenőrzés
 - Location list automatikus frissítése
 - Ellenőrzés fájl megnyitáskor
 
 ### NERDTree automatizmusok
+
 - Automatikus megnyitás könyvtár argumentumnál
 - Automatikus bezárás, ha az utolsó ablak
 - Hidden fájlok megjelenítése
@@ -190,40 +214,48 @@ A konfiguráció tartalmaz előre beállított adatbázis kapcsolatokat a `~/.co
 ## Fájltípus specifikus beállítások
 
 ### Python
+
 - 4 szóköz behúzás
 - Tab → szóköz konverzió
 
 ### Makefile
+
 - Tab karakterek megtartása
 - 8 karakteres tab szélesség
 
 ### Assembly
+
 - NASM szintaxis `.asm` fájlokhoz
 
 ## Szükséges külső függőségek
 
 ### LaTeX támogatáshoz
+
 - `texlive` - LaTeX disztribúció
 - `zathura` - PDF viewer
 - `latexrun` vagy `latexmk` - Compiler
 
 ### PHP fejlesztéshez
+
 - `php` (>= 8.1)
 - `composer`
 - `php-mbstring`
 
 ### Rust fejlesztéshez
+
 - `rustc` - Rust compiler
 - `cargo` - Rust package manager
 - `rustfmt` - Kód formázó
 
 ### FZF kereséséhez
+
 - `fzf` - Fuzzy finder
 - `ripgrep` - Gyors grep
 - `silversearcher-ag` - Szöveg keresés
 - `universal-ctags` - Kód indexelés
 
 ### Codeium AI-hoz
+
 - Regisztráció: https://codeium.com
 - API kulcs beállítása
 
@@ -232,6 +264,7 @@ A konfiguráció tartalmaz előre beállított adatbázis kapcsolatokat a `~/.co
 Az alapértelmezett színséma: **iceberg**
 
 Változtatáshoz módosítsd a `.vimrc` fájlban:
+
 ```vim
 colorscheme <új_színséma_neve>
 ```

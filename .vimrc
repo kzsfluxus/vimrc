@@ -55,6 +55,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular'
+Plug 'ojroques/vim-oscyank'
 
 " Szintaxis és nyelvi támogatás (kondicionális betöltés)
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
@@ -127,6 +128,9 @@ if has("autocmd")
 	autocmd FileType vala ValaCodingStyle
 	autocmd FileType vala noremap <F8> :CCode<CR>
 end
+
+""" OSCYank beállítások
+xnoremap \y <Plug>OSCYankVisual
 
 """ Syntastic beállítások
 let g:syntastic_always_populate_loc_list = 1
