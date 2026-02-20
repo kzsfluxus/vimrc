@@ -1,0 +1,63 @@
+" =====================================================================
+" Minimal server/root vimrc (refined)
+" =====================================================================
+
+set nocompatible
+set encoding=utf-8
+scriptencoding utf-8
+
+" Sebesség és terminál kezelés
+set ttyfast
+set ttimeout ttimeoutlen=50
+set updatetime=300
+set belloff=all             " Teljes csend (visualbell helyett modernebb)
+
+" --- UI / Visibility
+set number
+set relativenumber          " Opcionális: segít a gyors ugrásban (pl. 10j)
+set ruler
+set showcmd
+set laststatus=2
+set background=dark
+syntax on
+
+" --- Keresés
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+" <Esc><Esc> lenyomására eltűnik a kijelölés
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
+
+" --- Szerkesztés
+set autoindent
+set expandtab               " Szervereken a space biztonságosabb, mint a tab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set backspace=indent,eol,start
+set scrolloff=5
+set hidden
+set mouse=                  " Szerveren hagyjuk a terminálnak a kijelölést
+set clipboard=
+
+" --- Fájlkezelés
+set nobackup
+set nowritebackup
+set noswapfile
+set undofile                " Tartós visszavonás (ha van írható hely)
+set undodir=~/.vim/undo//   " Érdemes létrehozni ezt a mappát
+
+" --- Formázás / Speciális karakterek
+set listchars=tab:»·,trail:·,nbsp:·
+set list                    " Mutassa a felesleges szóközöket a sor végén
+
+" --- Mentés root-ként, ha elfelejtetted sudo-val nyitni
+cmap w!! w !sudo tee > /dev/null %
+
+" =====================================================================
+" Filetype basics
+" =====================================================================
+filetype plugin indent on
+autocmd FileType make setlocal noexpandtab tabstop=8 shiftwidth=8
+autocmd BufRead,BufNewFile *.asm set filetype=nasm
